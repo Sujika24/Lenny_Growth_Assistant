@@ -1,6 +1,6 @@
 import { Session, SessionDetail, Message, Artifact, SystemConfig, KnowledgeStatus } from '../types';
 
-const API_BASE = import.meta.env.VITE_API_BASE || '';
+const API_BASE = import.meta.env.VITE_API_URL || '';
 
 class ApiService {
   private async request<T>(endpoint: string, options?: RequestInit): Promise<T> {
